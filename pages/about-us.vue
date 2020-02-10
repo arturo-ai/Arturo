@@ -70,7 +70,7 @@
 
         <div class="leader">
           <div class="image">
-            <img src="~assets//images/img_square_neil.jpg" class="hidden sm-img">
+            <img src="~assets//images/neil-cropped.jpg" class="hidden sm-img">
           </div>
           <div class="leader__info h__white t__white">
             <h3>Neil Pearson</h3>
