@@ -11,6 +11,9 @@
       <li>
         <nuxt-link @click.native="toggleMenue" to="/our-value">Our Value</nuxt-link>
       </li>
+      <li>
+        <nuxt-link @click.native="toggleMenue" to="/press">Press</nuxt-link>
+      </li>
     </ul>
     <SocialList class="mobile-social" />
     <div class="slider">
