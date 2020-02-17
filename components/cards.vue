@@ -94,6 +94,7 @@
 </template>
 
 <script>
+var react_to_scroll__cards;
 export default {
   mounted() {
     const _this = this;
@@ -225,7 +226,7 @@ export default {
       );
     }
 
-    const react_to_scroll__cards = function() {
+    react_to_scroll__cards = function() {
       if (!scenes_created__cards) {
           createScenes_cards();
           scenes_created__cards = true;
@@ -234,6 +235,9 @@ export default {
     }
 
     window.addEventListener('scroll', react_to_scroll__cards, false);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', react_to_scroll__cards, false)
   }
 };
 </script>
