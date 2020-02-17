@@ -153,7 +153,8 @@ export default {
   }
 
   .press-entry-image-container {
-    height: 40%;
+    min-height: 40%;
+    height: auto;
     background-color: white;
     display: flex;
     align-items: center;
@@ -162,6 +163,7 @@ export default {
 
     @media (min-width: 1200px) {
       width: 100%;
+      height: 40%;
     }
     
     @media (max-width: 745px) {
