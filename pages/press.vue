@@ -9,7 +9,7 @@
               <image src="" alt="Press Cover" />
             </div>
             <div class="press-entry-date" >{{mention.date}}</div>
-            <div class="press-entry-title" >{{mention.title}} - {{mention.source}}</div>
+            <div class="press-entry-title" >{{mention.title}} - {{mention.sourceName}}</div>
             <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
               <a class="button button__teal" v-bind:href="mention.link" target="_blank" >Read Article</a>
