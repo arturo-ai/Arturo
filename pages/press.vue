@@ -10,10 +10,9 @@
             </div>
             <div class="press-entry-date" >February 3rd, 2020</div>
             <div class="press-entry-title" >Space Tech Map, 2020</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -22,10 +21,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -34,10 +32,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -46,10 +43,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
         </div>
@@ -65,10 +61,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -77,10 +72,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -89,10 +83,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -101,10 +94,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
         </div>
@@ -120,10 +112,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -132,10 +123,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -144,10 +134,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -156,10 +145,9 @@
             </div>
             <div class="press-entry-date" >Date</div>
             <div class="press-entry-title" >Title</div>
+            <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <button class="btn press-entry-read-btn" >
-                <a href="" target="_blank" >Read Article</a>
-              </button>
+              <a class="button button__teal" href="" target="_blank" >Read Article</a>
             </div>
           </div>
         </div>
@@ -233,6 +221,7 @@ export default {
     }
 
     & > div {
+      width: 100%;
       display: flex;
     }
 
@@ -271,7 +260,6 @@ export default {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
   padding: 0 2.5rem;
   width: 25%;
   flex: none;
@@ -297,8 +285,16 @@ export default {
 
   .press-entry-date, .press-entry-title, .press-entry-read {
     flex: none;
-    padding: 0.07rem;
+    padding: 1rem 0.1rem;
     text-align: center;
+  }
+  
+  .press-entry-date {
+    font-size: 120%;
+  }
+
+  .press-entry-spacer {
+    flex: 1 1 0%;
   }
 }
 
