@@ -50,7 +50,7 @@ export default {
   },
   head() {
     return {
-      title: "Our Value | Arturo",
+      title: "Press | Arturo",
       meta: [{ hid: "description", name: "description", content: "Arturo Press" }]
     };
   }
