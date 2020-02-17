@@ -6,10 +6,14 @@
         <div class="card__content h__white">
           <div class="press-entry" v-for="(mention, subIndex) in block" :key="''+blockIndex+'-'+subIndex" >
             <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
+              <a v-bind:href="mention.link" target="_blank">
+                <div class="press-entry-image">
+                    <img v-bind:src="mention.mediaSource.image" alt="Press Cover" />
+                </div>
+              </a>
             </div>
             <div class="press-entry-date" >{{mention.date}}</div>
-            <div class="press-entry-title" >{{mention.title}} - <i>{{mention.source}}</i></div>
+            <div class="press-entry-title" >{{mention.title}} - <i>{{mention.mediaSource.name}}</i></div>
             <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
               <a class="button button__teal" v-bind:href="mention.link" target="_blank" >Read Article</a>
@@ -164,13 +168,16 @@ export default {
       width: 100%;
     }
 
-    > img {
-      width: 100%;
-      height: auto;
+    .press-entry-image {
+      padding: 1rem;
+      img {
+        width: 100%;
+        height: auto;
 
-      &.tall {
-        height: 100%;
-        width: auto;
+        &.tall {
+          height: 100%;
+          width: auto;
+        }
       }
     }
   }
