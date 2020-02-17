@@ -8,11 +8,11 @@
             <div class="press-entry-image-container" >
               <image src="" alt="Press Cover" />
             </div>
-            <div class="press-entry-date" >February 3rd, 2020</div>
-            <div class="press-entry-title" >Space Tech Map, 2020</div>
+            <div class="press-entry-date" >February 4th, 2020</div>
+            <div class="press-entry-title" >Labelbox Round Raised (jC Interviewed) - Fortune</div>
             <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
+              <a class="button button__teal" href="//fortune.com/2020/02/04/artificial-intelligence-data-labeling-labelbox/" target="_blank" >Read Article</a>
             </div>
           </div>
           <div class="press-entry" >
@@ -196,9 +196,13 @@ export default {
 
   .card {
     width: 70%;
-    height: 80vh;
     display: flex;
     margin-top: 2rem;
+    height: auto;
+
+    @media (min-width: 1200px) {
+      height: 80vh;
+    }
 
     &__blue {
       background-color: $color_blue;
@@ -221,16 +225,20 @@ export default {
     }
 
     & > div {
-      width: 100%;
+      width: 100% !important;
       display: flex;
     }
 
     &__content {
       padding: 5rem 2.5rem;
       display: flex;
-      flex-direction: row;
       height: 100%;
       box-sizing: border-box;
+      flex-direction: column;
+
+      @media (min-width: 1200px) {
+        flex-direction: row;
+      }
     }
   }
 
@@ -259,18 +267,33 @@ export default {
 .press-entry {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 0 2.5rem;
+  padding: 0 1.6rem;
   width: 25%;
   flex: none;
   box-sizing: border-box;
+  width: 100% !important;
+  height: 80vh;
+
+  @media (min-width: 1200px) {
+    width: 25% !important;
+    height: 100%;
+  }
 
   .press-entry-image-container {
-    height: 33%;
+    height: 40%;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 1rem 0;
+
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+    
+    @media (max-width: 745px) {
+      width: 100%;
+    }
 
     > img {
       width: 100%;
@@ -287,6 +310,14 @@ export default {
     flex: none;
     padding: 1rem 0.1rem;
     text-align: center;
+    
+    @media (max-width: 745px) {
+      width: 100%;
+    }
+  }
+
+  .press-entry-read {
+    padding-bottom: 2rem;
   }
   
   .press-entry-date {
@@ -297,6 +328,15 @@ export default {
 
   .press-entry-spacer {
     flex: 1 1 0%;
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
+    
+    @media (max-width: 745px) {
+      width: 100%;
+    }
   }
 }
 
