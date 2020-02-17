@@ -6,11 +6,11 @@
         <div class="card__content h__white">
           <div class="press-entry" v-for="(mention, subIndex) in block" :key="''+blockIndex+'-'+subIndex" >
             <div class="press-entry-image-container" >
-              <a v-bind:href="mention.link" target="_blank">
+              <div class="press-entry-image-wrapper" >
                 <div class="press-entry-image">
-                    <img v-bind:src="mention.mediaSource.image" alt="Press Cover" />
+                  <img v-bind:src="mention.mediaSource.image" alt="Press Cover" />
                 </div>
-              </a>
+              </div>
             </div>
             <div class="press-entry-date" >{{mention.date}}</div>
             <div class="press-entry-title" >{{mention.title}} - <i>{{mention.mediaSource.name}}</i></div>
@@ -108,9 +108,15 @@ export default {
       height: 100%;
       box-sizing: border-box;
       flex-direction: column;
+      flex-wrap: wrap;
+
+      @media (min-width: 996px) {
+        flex-direction: row;
+      }
 
       @media (min-width: 1200px) {
         flex-direction: row;
+        flex-wrap: nowrap;
       }
     }
   }
@@ -147,6 +153,12 @@ export default {
   width: 100% !important;
   height: 80vh;
 
+  @media (min-width: 996px) {
+    width: 50% !important;
+    height: 100%;
+    min-height: 80vh;
+  }
+
   @media (min-width: 1200px) {
     width: 25% !important;
     height: 100%;
@@ -161,24 +173,44 @@ export default {
     justify-content: center;
     margin: 1rem 0;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 996px) {
       width: 100%;
-      height: 40%;
+      height: 32vh;
     }
     
     @media (max-width: 745px) {
       width: 100%;
     }
 
-    .press-entry-image {
-      padding: 1rem;
-      img {
-        width: 100%;
-        height: auto;
+    a {
+      width: auto;
+    }
 
-        &.tall {
-          height: 100%;
-          width: auto;
+    .press-entry-image-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: 996px) {
+        width: 50%;
+      }
+
+      @media (min-width: 1200px) {
+        width: 100%;
+      }
+    
+      .press-entry-image {
+        padding: 1rem;
+        img {
+          width: 100%;
+          height: auto;
+
+          &.tall {
+            height: 100%;
+            width: auto;
+          }
         }
       }
     }
@@ -197,18 +229,21 @@ export default {
   .press-entry-read {
     padding-bottom: 2rem;
   }
+
+  .press-entry-date, .press-entry-title {
+    color: #444444;
+  }
   
-  .press-entry-date {
+  .press-entry-title {
     font-size: 120%;
     font-weight: bold;
-    color: #444444;
   }
 
   .press-entry-spacer {
     flex: 1 1 0%;
     display: none;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 996px) {
       display: block;
     }
     

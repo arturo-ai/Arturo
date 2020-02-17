@@ -33,7 +33,7 @@ export const sources = {
 const mediaMentions = [
     {
         date: 'February 4th, 2020',
-        title: 'Labelbox Round Raised (jC Interviewed)',
+        title: 'Labelbox Round Raised (Includes Quotes From Arturo)',
         mediaSource: sources.fortune,
         link: "//fortune.com/2020/02/04/artificial-intelligence-data-labeling-labelbox/"
     },
