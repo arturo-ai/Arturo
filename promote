@@ -1,0 +1,20 @@
+#!/bin/bash
+
+case $1 in
+    prod)
+        S3_BUCKET="website-prod-s3bucket-1edor0ex2ew55"
+        DISTRIBUTION_ID="E2OT6U04FAU3XK"
+    ;;
+    dev)
+        S3_BUCKET="website-dev-s3bucket-12moutnvelf5w"
+        DISTRIBUTION_ID="ECTBG9MUOI261"
+    ;;
+    *)
+        echo "Must specify either 'dev' or 'prod' for promotion."
+        exit 1
+    ;;
+esac
+
+
+aws s3 cp  ./dist/. s3://$S3_BUCKET --recursive
+aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"
