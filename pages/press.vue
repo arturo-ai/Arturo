@@ -1,153 +1,18 @@
 <template>
   <div>
     <ScrollForMore/>
-    <section class="cards cards__right fullHeight">
-      <article class="card card__ltBlue">
+    <section  v-for="(block, blockIndex) in mentionBlocks" :key="blockIndex" class="cards cards__right fullHeight">
+      <article class="card" v-bind:class="cardStyles[blockIndex % cardStyles.length]">
         <div class="card__content h__white">
-          <div class="press-entry" >
+          <div class="press-entry" v-for="(mention, subIndex) in block" :key="''+blockIndex+'-'+subIndex" >
             <div class="press-entry-image-container" >
               <image src="" alt="Press Cover" />
             </div>
-            <div class="press-entry-date" >February 4th, 2020</div>
-            <div class="press-entry-title" >Labelbox Round Raised (jC Interviewed) - Fortune</div>
+            <div class="press-entry-date" >{{mention.date}}</div>
+            <div class="press-entry-title" >{{mention.title}} - {{mention.source}}</div>
             <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <a class="button button__teal" href="//fortune.com/2020/02/04/artificial-intelligence-data-labeling-labelbox/" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="cards cards__right fullHeight">
-      <article class="card card__yellow">
-        <div class="card__content h__white">
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-
-    <section class="cards cards__right fullHeight">
-      <article class="card card__red">
-        <div class="card__content h__white">
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
-            </div>
-          </div>
-          <div class="press-entry" >
-            <div class="press-entry-image-container" >
-              <image src="" alt="Press Cover" />
-            </div>
-            <div class="press-entry-date" >Date</div>
-            <div class="press-entry-title" >Title</div>
-            <div class="press-entry-spacer" ></div>
-            <div class="press-entry-read" >
-              <a class="button button__teal" href="" target="_blank" >Read Article</a>
+              <a class="button button__teal" v-bind:href="mention.link" target="_blank" >Read Article</a>
             </div>
           </div>
         </div>
@@ -159,20 +24,24 @@
 </template>
 
 <script>
-import KinLogo from "@/components/icons/customer-logos/kin_logo_white.svg?inline";
-import RoofrLogo from "@/components/icons/customer-logos/roofr_logo_white.svg?inline";
-import HippoLogo from "@/components/icons/customer-logos/hippo_logo_white.svg?inline";
-import AmfamLogo from "@/components/icons/am_fam_logo_white.svg?inline";
+import mediaMentions from '@/data/mentions'
 import ScrollForMore from "@/components/ScrollForMore";
 import Footer from "@/layouts/partials/footer";
 export default {
   components: {
-    KinLogo,
-    RoofrLogo,
-    HippoLogo,
-    AmfamLogo,
     ScrollForMore,
     Footer
+  },
+  data() {
+    const chunkedMentions = []
+    const chunkSize = 4;
+    for(let i=0; i<mediaMentions.length; i+=chunkSize) {
+        chunkedMentions.push(mediaMentions.slice(i,i+chunkSize));
+    }
+    return {
+      mentionBlocks: chunkedMentions,
+      cardStyles: [['card__ltBlue'], ['card__yellow'], ['card__red']]
+    }
   },
   mounted() {
     window._paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
