@@ -2,7 +2,7 @@
   <div>
     <ScrollForMore/>
     <section class="cards cards__right fullHeight">
-      <article class="card card__blue">
+      <article class="card card__ltBlue">
         <div class="card__content h__white">
           <div class="press-entry" >
             <div class="press-entry-image-container" >
@@ -53,7 +53,7 @@
     </section>
 
     <section class="cards cards__right fullHeight">
-      <article class="card card__blue">
+      <article class="card card__yellow">
         <div class="card__content h__white">
           <div class="press-entry" >
             <div class="press-entry-image-container" >
@@ -104,7 +104,7 @@
     </section>
 
     <section class="cards cards__right fullHeight">
-      <article class="card card__blue">
+      <article class="card card__red">
         <div class="card__content h__white">
           <div class="press-entry" >
             <div class="press-entry-image-container" >
@@ -291,6 +291,8 @@ export default {
   
   .press-entry-date {
     font-size: 120%;
+    font-weight: bold;
+    color: #444444;
   }
 
   .press-entry-spacer {
