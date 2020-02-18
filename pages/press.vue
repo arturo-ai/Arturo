@@ -256,39 +256,5 @@ export default {
   }
 }
 
-.hippo {
-  .image {
-    background-image: url("~assets/images/img_value_hippo.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-  }
-}
-
-.amfam {
-  .image {
-    background-image: url("~assets/images/img_value_amfam.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-  }
-}
-.roofr {
-  .image {
-    background-image: url("~assets/images/img_value_roofr.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-  }
-}
-
-.kin {
-  .image {
-    background-image: url("~assets/images/img_value_kin.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-  }
-}
 </style>
 
