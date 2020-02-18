@@ -155,8 +155,7 @@ export default {
 
   @media (min-width: 996px) {
     width: 50% !important;
-    height: 100%;
-    min-height: 80vh;
+    height: 60vh;
   }
 
   @media (min-width: 1200px) {
@@ -176,6 +175,10 @@ export default {
     @media (min-width: 996px) {
       width: 100%;
       height: 32vh;
+    }
+
+    @media (min-width: 1200px) {
+      height: 40%;
     }
     
     @media (max-width: 745px) {
