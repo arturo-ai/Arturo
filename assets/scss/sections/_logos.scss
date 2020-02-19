@@ -22,6 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         width: 100%;
 
         & div {
@@ -70,12 +71,6 @@
 
     }
 
-    @media(max-width: 1715px) {
-        &__block {
-
-            flex-wrap: wrap;
-        }
-    }
     @media(max-width: 1680px) {
         &__block {
             svg {
