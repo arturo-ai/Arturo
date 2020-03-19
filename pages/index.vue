@@ -66,9 +66,9 @@
           <div>
             <AmfamLogo/>
           </div>
-          <div>
+          <!-- <div>
             <CanopiusLogo/>
-          </div>
+          </div> -->
           <div>
             <BranchLogo/>
           </div>
