@@ -14,6 +14,9 @@
       <li>
         <nuxt-link @click.native="toggleMenue" to="/press">Press</nuxt-link>
       </li>
+      <li>
+        <a href="https://jobs.arturo.ai/">Careers</a>
+      </li>
     </ul>
     <SocialList class="mobile-social" />
     <div class="slider">
