@@ -16,7 +16,8 @@
             <div class="press-entry-title" >{{mention.title}} - <i>{{mention.mediaSource.name}}</i></div>
             <div class="press-entry-spacer" ></div>
             <div class="press-entry-read" >
-              <a class="button button__teal" v-bind:href="mention.link" target="_blank" >Read Article</a>
+              <a class="button button__teal" v-if="mention.type === 'pdf'" :href="mention.link" target="_blank" >Read Article</a>
+              <a class="button button__teal" v-else v-bind:href="mention.link" target="_blank" >Read Article</a>
             </div>
           </div>
         </div>
@@ -31,6 +32,7 @@
 import mediaMentions from '@/data/mentions'
 import ScrollForMore from "@/components/ScrollForMore";
 import Footer from "@/layouts/partials/footer";
+
 export default {
   components: {
     ScrollForMore,
@@ -48,9 +50,11 @@ export default {
     }
   },
   mounted() {
-    window._paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
-    window._paq.push(['setDocumentTitle', 'Arturo Press']);
-    window._paq.push(['trackPageView']);
+    if (window._paq) {
+      window._paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
+      window._paq.push(['setDocumentTitle', 'Arturo Press']);
+      window._paq.push(['trackPageView']);
+    }
   },
   head() {
     return {

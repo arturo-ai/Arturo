@@ -12,25 +12,34 @@ import claimsJournalLogo from '../assets/images/media-logos/claims-journal-logo.
 import crowdfundInsiderLogo from '../assets/images/media-logos/crowdfundinsider.webp';
 import prWebLogo from '../assets/images/media-logos/prWeb.png';
 import propertyCasualty360Logo from '../assets/images/media-logos/propertyCasualty360.png';
+import arturoLogo from '../assets/images/arturo_favicon.svg';
 
 export const sources = {
-    fortune: { name: 'Fortune', image: fortuneLogo },
-    seraphim: { name: 'Seraphim Capital', image: seraphimLogo },
+    aiThority: { name: 'AiThority', image: aiThorityLogo},
     americanInno: { name: 'Chicago Inno', image: chiInnoLogo },
+    arturo: { name: 'Arturo', image: arturoLogo },
     builtIn: { name: 'Built In', image: builtInLogo}, // TODO: get better image
     businessWire: { name: 'Business Wire', image: businessWireLogo},
-    geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
     carrierManagement: { name: 'Carrier Management', image: carrierManagementLogo},
-    aiThority: { name: 'AiThority', image: aiThorityLogo},
-    digIn: { name: 'Digital Insurance', image: digitalInsuraceLogo},
     claimsJournal: { name: 'Claims Journal', image: claimsJournalLogo},
     crowdfundInsider: { name: 'Crowdfund Insider', image: crowdfundInsiderLogo},
+    digIn: { name: 'Digital Insurance', image: digitalInsuraceLogo},
+    fortune: { name: 'Fortune', image: fortuneLogo },
+    geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
     propertyCasualty360: { name: 'Property Casualty 360', image: propertyCasualty360Logo},
-    prWeb: { name: 'PRWeb', image: prWebLogo}
+    prWeb: { name: 'PRWeb', image: prWebLogo},
+    seraphim: { name: 'Seraphim Capital', image: seraphimLogo },
 }
 
 
 const mediaMentions = [
+    {
+        date: 'April 7th, 2020',
+        title: 'Arturo Secures $8 Million in Series A Funding to Advance ML and AI in the Insurance Market',
+        mediaSource: sources.arturo,
+        link: "./assets/documents/Arturo%20Series%20A%20Media%20Release%20FINAL%20040720.pdf",
+        type: 'pdf'
+    },
     {
         date: 'February 4th, 2020',
         title: 'Labelbox Round Raised (Includes Quotes From Arturo)',
