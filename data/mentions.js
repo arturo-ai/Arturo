@@ -12,7 +12,7 @@ import claimsJournalLogo from '../assets/images/media-logos/claims-journal-logo.
 import crowdfundInsiderLogo from '../assets/images/media-logos/crowdfundinsider.webp';
 import prWebLogo from '../assets/images/media-logos/prWeb.png';
 import propertyCasualty360Logo from '../assets/images/media-logos/propertyCasualty360.png';
-import arturoLogo from '../assets/images/arturo_favicon.svg';
+import arturoLogo from '../assets/images/media-logos/ArturoMedia.png';
 
 export const sources = {
     aiThority: { name: 'AiThority', image: aiThorityLogo},
@@ -37,8 +37,7 @@ const mediaMentions = [
         date: 'April 7th, 2020',
         title: 'Arturo Secures $8 Million in Series A Funding to Advance ML and AI in the Insurance Market',
         mediaSource: sources.arturo,
-        link: "/files/Arturo%20Series%20A%20Media%20Release%20FINAL%20040720.pdf",
-        type: 'pdf'
+        link: "//www.businesswire.com/news/home/20200407005756/en/Arturo-Secures-8-Million-Series-Funding-Advance",
     },
     {
         date: 'February 4th, 2020',
