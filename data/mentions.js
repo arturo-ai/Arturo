@@ -37,7 +37,7 @@ const mediaMentions = [
         date: 'April 7th, 2020',
         title: 'Arturo Secures $8 Million in Series A Funding to Advance ML and AI in the Insurance Market',
         mediaSource: sources.arturo,
-        link: "./assets/documents/Arturo%20Series%20A%20Media%20Release%20FINAL%20040720.pdf",
+        link: "/files/Arturo%20Series%20A%20Media%20Release%20FINAL%20040720.pdf",
         type: 'pdf'
     },
     {
