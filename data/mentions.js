@@ -13,6 +13,7 @@ import crowdfundInsiderLogo from '../assets/images/media-logos/crowdfundinsider.
 import prWebLogo from '../assets/images/media-logos/prWeb.png';
 import propertyCasualty360Logo from '../assets/images/media-logos/propertyCasualty360.png';
 import arturoLogo from '../assets/images/media-logos/ArturoMedia.png';
+import iagLogo from '../assets/images/media-logos/iag-logo.png';
 
 export const sources = {
     aiThority: { name: 'AiThority', image: aiThorityLogo},
@@ -26,6 +27,7 @@ export const sources = {
     digIn: { name: 'Digital Insurance', image: digitalInsuraceLogo},
     fortune: { name: 'Fortune', image: fortuneLogo },
     geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
+    iag: { name: 'IAG', image: iagLogo },
     propertyCasualty360: { name: 'Property Casualty 360', image: propertyCasualty360Logo},
     prWeb: { name: 'PRWeb', image: prWebLogo},
     seraphim: { name: 'Seraphim Capital', image: seraphimLogo },
@@ -33,6 +35,12 @@ export const sources = {
 
 
 const mediaMentions = [
+    {
+        date: 'April 8th, 2020',
+        title: 'IAG invests in Arturo, an AI powered analytics start-up',
+        mediaSource: sources.iag,
+        link: "//www.iag.com.au/iag-invests-arturo-ai-powered-analytics-start",
+    },
     {
         date: 'April 7th, 2020',
         title: 'Arturo Secures $8 Million in Series A Funding to Advance ML and AI in the Insurance Market',
