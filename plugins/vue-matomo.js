@@ -9,7 +9,7 @@ export default ({ app }) => {
     router: app.router,
 
     // Configure your matomo server and site
-    host: 'https://arturoai.matomo.cloud/',
+    host: 'https://arturoai.matomo.cloud',
     siteId: 3,
 
     // Enables link tracking on regular links. Note that this won't
@@ -27,10 +27,10 @@ export default ({ app }) => {
 
     // Changes the default .js and .php endpoint's filename
     // Default: 'piwik'
-    trackerFileName: 'piwik',
+    trackerFileName: 'matomo',
 
     // Whether or not to log debug information
     // Default: false
-    debug: false
+    debug: true
   })
 }
