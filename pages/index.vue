@@ -148,9 +148,11 @@ export default {
     };
   },
   mounted() {
-    window._paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
-    window._paq.push(['setDocumentTitle', 'Home Page']);
-    window._paq.push(['trackPageView']);
+    if (window._paq) {
+      window._paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
+      window._paq.push(['setDocumentTitle', 'Home Page']);
+      window._paq.push(['trackPageView']);
+    }
     const _this = this;
     var scenes_created = false;
 
