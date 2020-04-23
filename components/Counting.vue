@@ -2,6 +2,7 @@
     <section class="counting">
       <div id="countPhrase" >
         <h4 id="countPhraseWrapper" >AI Insights delivered &amp; counting</h4>
+        <ExplainInsight></ExplainInsight>
       </div>
       <div id="countUp">
         <h2 id="countUpWrapper" > </h2>
@@ -10,7 +11,11 @@
 </template>
 
 <script>
+import ExplainInsight from './ExplainInsight';
 export default {
+    components: {
+        ExplainInsight
+    },
     mounted() {
       const container = document.getElementById('countUpWrapper');
       const initial_font_size = 14.5; // vh

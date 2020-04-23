@@ -39,7 +39,8 @@ export default {
   plugins: [
     { src: '~plugins/vue-scrollmagic.js', ssr: false },
     { src: '~plugins/vue-js-modal'},
-    { src: '~plugins/vue-matomo.js', ssr: false }
+    { src: '~plugins/vue-matomo.js', ssr: false },
+    { src: '~/plugins/v-tooltip.js' },
   ],
 
   /*
@@ -58,6 +59,7 @@ export default {
       'assets/scss/helpers/_txtColors.scss',
       'assets/scss/helpers/vertText.scss',
       'assets/scss/mixins/_fluidType.scss.scss',
+      'assets/scss/v-tooltip.scss',
     ]
   },
   /*
