@@ -5,7 +5,7 @@
     placement="top-start"
     >
     <!-- This will be the popover target (for the events and position) -->
-    <button class="info-icon">i</button>
+    <a class="info-icon">i</a>
 
     <!-- This will be the content of the popover -->
     <template slot="popover">
@@ -16,7 +16,7 @@
             Each insight includes characteristics such as number of buildings, roof type &amp; area, roof material, roof complexity &amp; condition, pools, trampolines, cars, number of stories, building/tree overlap, and much more.
         </p>
         <p class="b-0">
-            You can <a v-on:click="show" v-close-popover>request a demo</a> to learn more about all of the insights we offer.
+            You can <a class="link" v-on:click="show" v-close-popover>request a demo</a> to learn more about all of the insights we offer.
         </p>
     </template>
     </v-popover>
@@ -41,7 +41,7 @@ export default {
         margin-bottom: 0;
         padding-bottom: 0;
     }
-    a{
+    a.link{
         color: $color_teal;
         text-decoration: underline;
         &:hover{
@@ -55,7 +55,7 @@ export default {
 
         height: 1.75rem;
         width: 1.75rem;
-        border-radius: 50%;
+        border-radius: 1.325rem;
         border: 2px solid $color_white;
         background-color: $color_darkBlue;
         color: $color_white;
