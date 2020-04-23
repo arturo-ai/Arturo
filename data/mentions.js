@@ -15,6 +15,7 @@ import propertyCasualty360Logo from '../assets/images/media-logos/propertyCasual
 import arturoLogo from '../assets/images/media-logos/ArturoMedia.png';
 import iagLogo from '../assets/images/media-logos/iag-logo.png';
 import insuranceNewsLogo from '../assets/images/media-logos/insurance-news-logo.svg';
+import nextLogo from '../assets/images/media-logos/NEXT-logo.png';
 
 export const sources = {
     aiThority: { name: 'AiThority', image: aiThorityLogo},
@@ -30,6 +31,7 @@ export const sources = {
     geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
     iag: { name: 'IAG', image: iagLogo },
     insuranceNews: { name: 'Insurance News', image: insuranceNewsLogo },
+    next: { name: 'NEXT', image: nextLogo },
     propertyCasualty360: { name: 'Property Casualty 360', image: propertyCasualty360Logo},
     prWeb: { name: 'PRWeb', image: prWebLogo},
     seraphim: { name: 'Seraphim Capital', image: seraphimLogo },
@@ -37,6 +39,12 @@ export const sources = {
 
 
 const mediaMentions = [
+    {
+        date: 'April 22th, 2020',
+        title: 'EXCLUSIVE: Arturo CEO John-Isaac “jC” Clark discusses three ways COVID-19 will change both mortgage and insurance industries forever',
+        mediaSource: sources.next,
+        link: "//nextmortgagenews.com/editorial/exclusive-arturo-ceo-john-isaac-jc-clark-discusses-three-ways-covid-19-will-change-both-mortgage-and-insurance-industries-forever/",
+    },
     {
         date: 'April 20th, 2020',
         title: 'IAG invests in US artificial intelligence firm',
