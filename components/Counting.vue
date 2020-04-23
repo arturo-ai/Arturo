@@ -1,10 +1,7 @@
 <template>
     <section class="counting">
       <div id="countPhrase" >
-        <h4 id="countPhraseWrapper" >AI Insights delivered &amp; counting</h4>
-        <div id="explainHolder">
-            <ExplainInsight></ExplainInsight>
-        </div>
+        <h4 id="countPhraseWrapper" >AI Insights delivered &amp; counting <ExplainInsight></ExplainInsight></h4>
       </div>
       <div id="countUp">
         <h2 id="countUpWrapper" > </h2>
@@ -123,10 +120,10 @@ export default {
         color: $color_darkBlue;
         font-weight: 100;
         font-size: em(24);
-        display: flex;
+        display: inline-block;
         align-items: center;
         justify-content: center;
-        width: 125px;
+        width: 145px;
         max-width: 100%;
         flex: none;
         line-height: 1.25;
@@ -175,6 +172,7 @@ export default {
           width: auto;
           text-align: center;
           padding-top: 2.2vh;
+          font-size: 1.2em;
         }
 
         #countUp {
