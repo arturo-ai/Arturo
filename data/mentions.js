@@ -15,7 +15,7 @@ import propertyCasualty360Logo from '../assets/images/media-logos/propertyCasual
 import arturoLogo from '../assets/images/media-logos/ArturoMedia.png';
 import iagLogo from '../assets/images/media-logos/iag-logo.png';
 import insuranceNewsLogo from '../assets/images/media-logos/insurance-news-logo.svg';
-import nextLogo from '../assets/images/media-logos/NEXT-logo.png';
+import nextLogo from '../assets/images/media-logos/NEXT-logo-dark.jpg';
 
 export const sources = {
     aiThority: { name: 'AiThority', image: aiThorityLogo},
@@ -31,7 +31,7 @@ export const sources = {
     geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
     iag: { name: 'IAG', image: iagLogo },
     insuranceNews: { name: 'Insurance News', image: insuranceNewsLogo },
-    next: { name: 'NEXT', image: nextLogo, backgroundColor: '#3F4045' },
+    next: { name: 'NEXT', image: nextLogo },
     propertyCasualty360: { name: 'Property Casualty 360', image: propertyCasualty360Logo},
     prWeb: { name: 'PRWeb', image: prWebLogo},
     seraphim: { name: 'Seraphim Capital', image: seraphimLogo },
