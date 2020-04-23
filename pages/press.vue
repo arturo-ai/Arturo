@@ -6,7 +6,7 @@
         <div class="card__content h__white">
           <div class="press-entry" v-for="(mention, subIndex) in block" :key="''+blockIndex+'-'+subIndex" >
             <div class="press-entry-image-container" >
-              <div class="press-entry-image-wrapper" >
+              <div class="press-entry-image-wrapper" v-bind:style="{ backgroundColor: mention.mediaSource.backgroundColor || 'white' }" >
                 <div class="press-entry-image">
                   <img v-bind:src="mention.mediaSource.image" alt="Press Cover" />
                 </div>
