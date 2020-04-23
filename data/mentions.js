@@ -31,7 +31,7 @@ export const sources = {
     geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
     iag: { name: 'IAG', image: iagLogo },
     insuranceNews: { name: 'Insurance News', image: insuranceNewsLogo },
-    next: { name: 'NEXT', image: nextLogo, backgroundColor: '#002ED8' },
+    next: { name: 'NEXT', image: nextLogo, backgroundColor: '#3F4045' },
     propertyCasualty360: { name: 'Property Casualty 360', image: propertyCasualty360Logo},
     prWeb: { name: 'PRWeb', image: prWebLogo},
     seraphim: { name: 'Seraphim Capital', image: seraphimLogo },
