@@ -52,8 +52,8 @@ export default {
         background-color: $color_darkBlue;
         color: $color_white;
         border: 2px solid $color_white;
-        height: 2em;
-        width: 2em;
+        height: 2rem;
+        width: 2rem;
         border-radius: 50%;
         outline: none;
         transition: all 0.3s;
