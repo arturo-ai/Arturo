@@ -2,7 +2,9 @@
     <section class="counting">
       <div id="countPhrase" >
         <h4 id="countPhraseWrapper" >AI Insights delivered &amp; counting</h4>
-        <ExplainInsight></ExplainInsight>
+        <div id="explainHolder">
+            <ExplainInsight></ExplainInsight>
+        </div>
       </div>
       <div id="countUp">
         <h2 id="countUpWrapper" > </h2>
@@ -187,6 +189,12 @@ export default {
 
         #countUpWrapper {
           font-size: em(10);
+        }
+
+        #explainHolder{
+          width: auto;
+          text-align: center;
+          padding-top: 2.2vh;
         }
       }
     }
