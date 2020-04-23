@@ -41,7 +41,7 @@ export const sources = {
 const mediaMentions = [
     {
         date: 'April 22th, 2020',
-        title: 'Arturo CEO discusses how COVID-19 will change both mortgage & insurance industries forever',
+        title: 'Arturo CEO discusses how COVID-19 will change both mortgage & insurance industries',
         mediaSource: sources.next,
         link: "//nextmortgagenews.com/editorial/exclusive-arturo-ceo-john-isaac-jc-clark-discusses-three-ways-covid-19-will-change-both-mortgage-and-insurance-industries-forever/",
     },
