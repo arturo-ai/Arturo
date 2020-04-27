@@ -16,7 +16,7 @@ import arturoLogo from '../assets/images/media-logos/ArturoMedia.png';
 import iagLogo from '../assets/images/media-logos/iag-logo.png';
 import insuranceNewsLogo from '../assets/images/media-logos/insurance-news-logo.svg';
 import nextLogo from '../assets/images/media-logos/NEXT-logo-dark.jpg';
-import forbesLogo from '../assets/images/media-logos/Forbes.jpg';
+import forbesLogo from '../assets/images/media-logos/Forbes.png';
 
 export const sources = {
     aiThority: { name: 'AiThority', image: aiThorityLogo},
