@@ -45,7 +45,7 @@ const mediaMentions = [
         date: 'April 26th, 2020',
         title: 'Top 25 Machine Learning Startups To Watch In 2020',
         mediaSource: sources.forbes,
-        link: "//https://www.forbes.com/sites/louiscolumbus/2020/04/26/top-25-machine-learning-startups-to-watch-in-2020/#39046c331f52",
+        link: "//www.forbes.com/sites/louiscolumbus/2020/04/26/top-25-machine-learning-startups-to-watch-in-2020/#39046c331f52",
     },
     {
         date: 'April 22th, 2020',
