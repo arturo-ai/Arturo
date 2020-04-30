@@ -1,27 +1,36 @@
 <template>
-  <footer class="page-footer" >
+  <footer class="page-footer">
     <div class="footer__bottom">
       <div class="bottom-content t__white">
         <div class="bottom-left">
-          <a href="/"></a>
-          <nuxt-link to="/">
-            <ArturoLogo/>
-          </nuxt-link>
+          <div class="logo-holder">
+            <a href="/"></a>
+            <nuxt-link to="/">
+              <ArturoLogo />
+            </nuxt-link>
+          </div>
           <div class="address">
             350 North Orleans Street
-            <br>Suite 8000N
-            <br>Chicago IL 60654
-            <br>312-535-3006
-            <br>
+            <br />Suite 8000N <br />Chicago IL 60654 <br />USA
+          </div>
+          <div class="address secondary_address">
+            245 Powell Ave
+            <br />Ottawa, ON K1S 2A4 <br />Canada
+          </div>
+          <div class="address secondary_address">
+            312-535-3006
+            <br />
             <a href="mailto:info@arturo.ai">info@arturo.ai</a>
           </div>
         </div>
-        <div class="bottom-center">©2019 Arturo inc.</div>
         <div class="bottom-right">
-          <SocialList class="social"/>
-          <nuxt-link to="/">Home</nuxt-link>//<nuxt-link to="/about-us">About Us</nuxt-link>//<nuxt-link to="/our-value">Our Value</nuxt-link>
+          <SocialList class="social" />
+          <nuxt-link to="/">Home</nuxt-link>//<nuxt-link to="/about-us"
+            >About Us</nuxt-link
+          >//<nuxt-link to="/our-value">Our Value</nuxt-link>
         </div>
       </div>
+      <div class="footer__copyright t__white">©2019 Arturo inc.</div>
     </div>
   </footer>
 </template>
@@ -37,7 +46,7 @@ var footer_scroll_scene = null;
 export default {
   components: {
     SocialList,
-    ArturoLogo,
+    ArturoLogo
   },
 
   mounted() {
@@ -53,20 +62,20 @@ export default {
     );
 
     footer_menu_scene = this.$scrollmagic.scene({
-        triggerElement: 'footer',
-        triggerHook: 1,
-        reverse: true,
+      triggerElement: "footer",
+      triggerHook: 1,
+      reverse: true
     });
-    footer_menu_scene.setClassToggle('#slideout-menu', 'hide-from-footer');
+    footer_menu_scene.setClassToggle("#slideout-menu", "hide-from-footer");
 
     this.$scrollmagic.addScene(footer_menu_scene);
 
     footer_scroll_scene = this.$scrollmagic.scene({
-        triggerElement: 'footer',
-        triggerHook: 1,
-        reverse: true,
+      triggerElement: "footer",
+      triggerHook: 1,
+      reverse: true
     });
-    footer_scroll_scene.setClassToggle('#scroll', 'hide-from-footer');
+    footer_scroll_scene.setClassToggle("#scroll", "hide-from-footer");
 
     this.$scrollmagic.addScene(footer_scroll_scene);
   },
@@ -82,5 +91,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

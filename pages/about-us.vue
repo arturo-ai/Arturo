@@ -271,6 +271,24 @@ export default {
   width: 35%;
 }
 
+.leaders {
+    .leader {
+        &:first-of-type {
+            position: relative;
+
+            &:before {
+                content: "Leadership";
+                position: absolute;
+                top: em(-20px);
+                left: 4rem;
+                color: $color_darkBlue;
+                font-weight: bold;
+                font-size: em(40px);
+            }
+        }
+    }
+}
+
 .bgImage-about {
   article{
     min-height: 60vh;

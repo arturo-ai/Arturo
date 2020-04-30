@@ -124,20 +124,6 @@
             flex-direction: column;
             margin-bottom: 4rem;
 
-            &:first-of-type {
-                position: relative;
-
-                &:before {
-                    content: "Leadership";
-                    position: absolute;
-                    top: em(-20px);
-                    left: 4rem;
-                    color: $color_darkBlue;
-                    font-weight: bold;
-                    font-size: em(40px);
-                }
-            }
-
             .image {
                 margin: 0 4rem 0 4rem;
                 box-sizing: border-box;

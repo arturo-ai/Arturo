@@ -1,23 +1,22 @@
 <template>
   <div>
     <ScrollForMore />
-    <section class="splash">
-    </section>
+    <section class="splash"></section>
     <section class="description cards ">
-      <article class="card card__blue">
+      <article class="card ">
         <div>
-          <div class="card__content h__white center">
+          <div class="card__content  center">
             <p>
               Social distancing. Work from Home. Community Spread. These phrases
-              and concerns are affecting every industry around the world. And they
-              feel especially close to home for Insurance Carriers who are
-              challenged with gathering high-quality and accurate data within the
-              constraints of social distancing.
+              and concerns are affecting every industry around the world. And
+              they feel especially close to home for Insurance Carriers who are
+              challenged with gathering high-quality and accurate data within
+              the constraints of social distancing.
             </p>
             <p>
-              If you are an Insurance Carrier looking for solutions to balance the
-              need to manage risk, take care of policyholders and continue to grow
-              your business, we can help.
+              If you are an Insurance Carrier looking for solutions to balance
+              the need to manage risk, take care of policyholders and continue
+              to grow your business, we can help.
             </p>
             <p>
               Join speakers John-Isaac “JC” Clark, CEO of Arturo, Inc., and Cole
@@ -55,9 +54,30 @@
         </div>
       </article>
     </section>
-    <section class="cards cards__right fullHeight">
-      BLOCK
+    <section class="leadership bg__ltblue">
+      <h3 class="section_title">Speakers</h3>
+      <div class="leaders">
+        <div class="leader">
+          <div class="image">
+            <img src="~assets/images/img_jc.jpg" class="hidden" />
+          </div>
+          <div class="leader__info h__white t__white">
+            <h3>John-Isaac Clark</h3>
+            <p>CEO of Arturo, Inc.</p>
+          </div>
+        </div>
+        <div class="leader">
+          <div class="image">
+            <img src="~assets/images/img_cole_winans.jpg" class="hidden" />
+          </div>
+          <div class="leader__info h__white t__white">
+            <h3>Cole Winans</h3>
+            <p>CEO of Flyreel, Inc.</p>
+          </div>
+        </div>
+      </div>
     </section>
+    <div class="spacer"></div>
     <Footer />
   </div>
 </template>
@@ -124,10 +144,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-p, ul.p-style li{
-  padding-bottom: 1.15em
+p,
+ul.p-style li {
+  padding-bottom: 1.15em;
 }
-.b-0{
+.b-0 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -147,7 +168,7 @@ p, ul.p-style li{
     &__blue {
       background-color: $color_blue;
     }
-    >div{
+    > div {
       flex-basis: 50%;
     }
   }
@@ -160,14 +181,42 @@ p, ul.p-style li{
   }
 }
 
-.splash{
+.splash {
   height: 70vh;
   max-height: 854px;
   background-image: url("~assets/images/img_af_splash_low.png");
   background-size: contain;
 }
 
-.card__content,
+.bg__ltblue {
+  background-color: $color_lightBlue;
+}
+
+.section_title{
+  color: $color_white;
+  font-weight: bold;
+}
+
+
+.leadership{
+  padding-top: 2em;
+}
+
+.leaders {
+  .leader {
+    .image {
+      max-height: 320px;
+      > img {
+        max-height: 320px;
+      }
+    }
+  }
+}
+
+.spacer{
+  height: 10vh;
+}
+
 .bgImage__content {
   h4 {
     padding-top: 2rem;
@@ -192,19 +241,27 @@ p, ul.p-style li{
 }
 
 @media (max-width: 1100px) {
-  .cards__right {
+  .cards{
     .card {
       width: 90%;
-      div {
+      > div {
         width: 100%;
         .card__content {
           padding: 0 2rem 0 2rem;
         }
       }
     }
-
-    .image {
-      display: none;
+  }
+  .description .card{
+    flex-direction: column;
+    .card__content{
+      width: 100%;
+    }
+  }
+  .leadership{
+    margin-top: 4em;
+    .leaders{
+      width: auto;
     }
   }
 }
@@ -222,11 +279,5 @@ p, ul.p-style li{
     }
   }
 
-  &.cards__right {
-    justify-content: flex-end;
-    .image {
-      display: none;
-    }
-  }
 }
 </style>
