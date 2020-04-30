@@ -16,6 +16,7 @@ import arturoLogo from '../assets/images/media-logos/ArturoMedia.png';
 import iagLogo from '../assets/images/media-logos/iag-logo.png';
 import insuranceNewsLogo from '../assets/images/media-logos/insurance-news-logo.svg';
 import nextLogo from '../assets/images/media-logos/NEXT-logo-dark.jpg';
+import forbesLogo from '../assets/images/media-logos/Forbes.png';
 
 export const sources = {
     aiThority: { name: 'AiThority', image: aiThorityLogo},
@@ -27,6 +28,7 @@ export const sources = {
     claimsJournal: { name: 'Claims Journal', image: claimsJournalLogo},
     crowdfundInsider: { name: 'Crowdfund Insider', image: crowdfundInsiderLogo},
     digIn: { name: 'Digital Insurance', image: digitalInsuraceLogo},
+    forbes: { name: 'Forbes', image: forbesLogo },
     fortune: { name: 'Fortune', image: fortuneLogo },
     geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
     iag: { name: 'IAG', image: iagLogo },
@@ -39,6 +41,12 @@ export const sources = {
 
 
 const mediaMentions = [
+    {
+        date: 'April 26th, 2020',
+        title: 'Top 25 Machine Learning Startups To Watch In 2020',
+        mediaSource: sources.forbes,
+        link: "//www.forbes.com/sites/louiscolumbus/2020/04/26/top-25-machine-learning-startups-to-watch-in-2020/#39046c331f52",
+    },
     {
         date: 'April 22th, 2020',
         title: 'Arturo CEO discusses how COVID-19 will change both mortgage & insurance industries',
