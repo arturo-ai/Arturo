@@ -22,7 +22,7 @@
             <p>
               Join speakers John-Isaac “JC” Clark, CEO of Arturo, Inc., and Cole
               Winans, CEO of Flyreel, Inc. for our Webinar: Touchless Home
-              Inspections: Using AI & ML for Home Inspections. You’ll discover
+              Inspections: Using AI &amp; ML for Home Inspections. You’ll discover
               their unique approach to touchless home inspections and how to
               provide peace of mind for your business and your policyholders.
             </p>
@@ -49,7 +49,7 @@
             width="395px"
             height="611px"
             frameborder="0"
-            src="https://arturo.zohoshowtime.com/embedform#sessionId=3226034000000016010&zaid=10016841748&utm_st_source=embed&header=true"
+            src="https://arturo.zohoshowtime.com/embedform#sessionId=3226034000000016010&amp;zaid=10016841748&amp;utm_st_source=embed&amp;header=true"
           ></iframe>
         </div>
       </article>
