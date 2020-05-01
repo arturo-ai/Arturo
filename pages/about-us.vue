@@ -191,11 +191,10 @@ export default {
     };
   },
   mounted() {
-    if (!window._paq) {
-      window._paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
-      window._paq.push(['setDocumentTitle', 'About Us Page']);
-      window._paq.push(['trackPageView']);
-    }
+    if (!window._paq) { window._paq = []; }
+    window._paq.push(['setCustomUrl', '/' + window.location.hash.substr(1)]);
+    window._paq.push(['setDocumentTitle', 'About Us Page']);
+    window._paq.push(['trackPageView']);
     var animateHTML = function() {
       var elems;
       var windowHeight;
