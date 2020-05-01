@@ -18,6 +18,7 @@
 @import 'sections/cards.scss';
 @import 'sections/footer.scss';
 @import 'sections/leadership.scss';
+@import 'sections/speakers.scss';
 @import 'sections/logos.scss';
 @import 'sections/process.scss';
 
@@ -60,4 +61,10 @@ section{
 .page-footer {
   height: 30vh;
   background-color: $color_darkBlue;
+}
+@media(max-width: 1040px) {
+    .page-footer{
+        min-height: 35rem;
+        max-height: 100vh;
+    }
 }
