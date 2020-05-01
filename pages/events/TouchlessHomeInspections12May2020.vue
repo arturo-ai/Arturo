@@ -6,7 +6,7 @@
     <section class="description cards ">
       <article class="card ">
         <div>
-          <div class="card__content  center">
+          <div class="card__content center">
             <p>
               Social distancing. Work from Home. Community Spread. These phrases
               and concerns are affecting every industry around the world. And
@@ -45,7 +45,7 @@
         <div>
           <iframe
             id="st_registerform_iframe"
-            class="center"
+            class="center-x"
             width="395px"
             height="611px"
             frameborder="0"
@@ -153,7 +153,11 @@ ul.p-style li {
   padding-bottom: 0;
 }
 .center {
-  margin: auto;
+  margin: auto
+}
+.center-x{
+    margin-left: auto;
+    margin-right: auto;
 }
 .cards.description  {
   font-weight: 300;
@@ -187,6 +191,10 @@ ul.p-style li {
 .section_title{
   color: $color_white;
   font-weight: bold;
+}
+
+.speaker-list{
+    margin-top: 4rem;
 }
 
 // for cole's image
