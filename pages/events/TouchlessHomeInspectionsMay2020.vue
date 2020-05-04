@@ -92,12 +92,12 @@ export default {
   },
   head() {
     return {
-      title: "Touchless Home Inspections - 12 May 2020 | Arturo",
+      title: "Touchless Home Inspections - 19 May 2020 | Arturo",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Touchless Home Inspections - 12 May 2020"
+          content: "Touchless Home Inspections - 19 May 2020"
         }
       ]
     };
@@ -107,7 +107,7 @@ export default {
       window._paq = [];
     }
     window._paq.push(["setCustomUrl", "/" + window.location.hash.substr(1)]);
-    window._paq.push(["setDocumentTitle", "TouchlessHomeInspections12May2020"]);
+    window._paq.push(["setDocumentTitle", "TouchlessHomeInspectionsMay2020"]);
     window._paq.push(["trackPageView"]);
     var animateHTML = function() {
       var elems;
