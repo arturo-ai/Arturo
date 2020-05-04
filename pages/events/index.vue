@@ -1,7 +1,7 @@
 <script>
 export default {
     middleware ({redirect }) {
-        return redirect('/events/TouchlessHomeInspectionsMay2020')
+        return redirect('/')
     }
 }
 </script>
