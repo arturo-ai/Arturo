@@ -43,14 +43,16 @@
           </div>
         </div>
         <div>
-          <iframe
-            id="st_registerform_iframe"
-            class="center-x"
-            width="395px"
-            height="611px"
-            frameborder="0"
-            src="https://arturo.zohoshowtime.com/embedform#sessionId=3226034000000016010&amp;zaid=10016841748&amp;utm_st_source=embed&amp;header=true"
-          ></iframe>
+          <div class="center-x">
+            <h5 class="text-center">Register for the Webinar</h5>
+            <iframe
+              id="st_registerform_iframe"
+              width="395px"
+              height="611px"
+              frameborder="0"
+              src="https://arturo.zohoshowtime.com/embedform#sessionId=3226034000000016010&amp;zaid=10016841748&amp;utm_st_source=embed&amp;header=true"
+            ></iframe>
+          </div>
         </div>
       </article>
     </section>
@@ -158,6 +160,9 @@ ul.p-style li {
 .center-x{
     margin-left: auto;
     margin-right: auto;
+}
+.text-center{
+  text-align: center;
 }
 .cards.description  {
   font-weight: 300;
