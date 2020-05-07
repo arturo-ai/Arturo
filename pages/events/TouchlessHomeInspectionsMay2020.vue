@@ -53,8 +53,12 @@
         <div>
           <div class="center-x">
             <h5 class="text-center">Register for the Webinar</h5>
+            <div style="width:395px">
+              <p class="small"><i>All registrants are subject to approval prior to attending the Webinar.  Registrants without a company email will not receive approval. Thank you for understanding.</i></p>
+            </div>
             <iframe
               id="st_registerform_iframe"
+              class="center-x"
               width="395px"
               height="611px"
               frameborder="0"
@@ -161,6 +165,9 @@ export default {
 p,
 ul.p-style li {
   padding-bottom: 1.15em;
+}
+p.small{
+    font-size: 90%;
 }
 .b-0 {
   margin-bottom: 0;
