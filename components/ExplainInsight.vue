@@ -1,11 +1,10 @@
 <template>
     <v-popover
-    style="display: inline-block"
-    offset="16"
-    placement="top-start"
+        offset="16"
+        placement="top-start"
     >
     <!-- This will be the popover target (for the events and position) -->
-    <a class="info-icon">i</a>
+    <a class="link learn-more">Learn more about insights</a>
 
     <!-- This will be the content of the popover -->
     <template slot="popover">
@@ -48,29 +47,8 @@ export default {
             cursor: pointer;
         }
     }
-    .info-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        height: 1.75rem;
-        width: 1.75rem;
-        border-radius: 1.325rem;
-        border: 2px solid $color_white;
-        background-color: $color_darkBlue;
-        color: $color_white;
-
-        font-weight: 600;
-        font-size: .95rem;
-        line-height: 1;
-
-        -webkit-appearance: none;
-        outline: none;
-
-        transition: all 0.3s;
-        &:hover{
-            cursor: pointer;
-            border: 2px solid $color_teal;
-        }
+    a.link.learn-more{
+        color: $color_red;
+        font-size: em(11);
     }
 </style>

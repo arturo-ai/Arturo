@@ -120,10 +120,11 @@ export default {
         color: $color_darkBlue;
         font-weight: 100;
         font-size: em(24);
+        text-align: center;
         display: inline-block;
         align-items: center;
         justify-content: center;
-        width: 145px;
+        width: 13rem;
         max-width: 100%;
         flex: none;
         line-height: 1.25;
