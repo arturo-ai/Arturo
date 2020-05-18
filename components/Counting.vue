@@ -124,7 +124,7 @@ export default {
         display: inline-block;
         align-items: center;
         justify-content: center;
-        width: 13rem;
+        width: 14rem;
         max-width: 100%;
         flex: none;
         line-height: 1.25;

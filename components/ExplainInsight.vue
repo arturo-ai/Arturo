@@ -48,6 +48,7 @@ export default {
         }
     }
     a.link.learn-more{
+        font-weight: bold;
         color: $color_red;
         font-size: em(11);
     }
