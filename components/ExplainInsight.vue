@@ -1,6 +1,6 @@
 <template>
     <v-popover
-        offset="16"
+        offset="0"
         placement="top-start"
     >
     <!-- This will be the popover target (for the events and position) -->
