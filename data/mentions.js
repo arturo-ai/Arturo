@@ -42,6 +42,12 @@ export const sources = {
 
 const mediaMentions = [
     {
+        date: 'May 20th, 2020',
+        title: 'Arturo Joins NVIDIA Inception Program',
+        mediaSource: sources.businessWire,
+        link: "//www.businesswire.com/news/home/20200520005663/en/Arturo-Joins-NVIDIA-Inception-Program",
+    },
+    {
         date: 'April 26th, 2020',
         title: 'Top 25 Machine Learning Startups To Watch In 2020',
         mediaSource: sources.forbes,
