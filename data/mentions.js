@@ -17,6 +17,7 @@ import iagLogo from '../assets/images/media-logos/iag-logo.png';
 import insuranceNewsLogo from '../assets/images/media-logos/insurance-news-logo.svg';
 import nextLogo from '../assets/images/media-logos/NEXT-logo-dark.jpg';
 import forbesLogo from '../assets/images/media-logos/Forbes.png';
+import fnoinsuretech from '../assets/images/media-logos/FNO_Podcast_microphone_square.webp';
 
 export const sources = {
     aiThority: { name: 'AiThority', image: aiThorityLogo},
@@ -30,6 +31,7 @@ export const sources = {
     digIn: { name: 'Digital Insurance', image: digitalInsuraceLogo},
     forbes: { name: 'Forbes', image: forbesLogo },
     fortune: { name: 'Fortune', image: fortuneLogo },
+    fnoinsuretech: { name: 'FNO: InsureTech', image: fnoinsuretech },
     geospatialWorld: { name: 'Geospatial World', image: geospatialWorldLogo},
     iag: { name: 'IAG', image: iagLogo },
     insuranceNews: { name: 'Insurance News', image: insuranceNewsLogo },
@@ -41,6 +43,12 @@ export const sources = {
 
 
 const mediaMentions = [
+    {
+        date: 'June 6th, 2020',
+        title: `Ep 78 - Arturo's CEO, John-Isaac "jC" Clark`,
+        mediaSource: sources.fnoinsuretech,
+        link: "//www.fnoinsuretech.com/podcast/episode/30d820b1/ep-78-arturos-ceo-john-isaac-jc-clark",
+    },
     {
         date: 'May 20th, 2020',
         title: 'Arturo Joins NVIDIA Inception Program',
