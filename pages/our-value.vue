@@ -54,7 +54,7 @@
               03
               <span>/04</span>
             </h4>
-            <img src="~assets/images/openly_logo.png">
+            <OpenlyLogo style="height: 80px"/>
             <h4>Pre-Fill / Quotation</h4>
             <p>
               "Access to quality data is integral to how we quantify risk at Openly. Arturo’s approach, layering sophisticated machine learning on top of high resolution imagery, is a key part of how we gain a deeper understanding of a specific property, and are ultimately able to offer an accurate and competitive rate."
@@ -94,6 +94,7 @@
 import KinLogo from "@/components/icons/customer-logos/kin_logo_white.svg?inline";
 import RoofrLogo from "@/components/icons/customer-logos/roofr_logo_white.svg?inline";
 import HippoLogo from "@/components/icons/customer-logos/hippo_logo_white.svg?inline";
+import OpenlyLogo from "@/components/icons/customer-logos/openly_logo_white.svg?inline";
 import AmfamLogo from "@/components/icons/am_fam_logo_white.svg?inline";
 import ScrollForMore from "@/components/ScrollForMore";
 import Footer from "@/layouts/partials/footer";
@@ -102,6 +103,7 @@ export default {
     KinLogo,
     RoofrLogo,
     HippoLogo,
+    OpenlyLogo,
     AmfamLogo,
     ScrollForMore,
     Footer
