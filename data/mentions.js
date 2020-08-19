@@ -44,6 +44,12 @@ export const sources = {
 
 const mediaMentions = [
     {
+        date: 'August 19th, 2020',
+        title: `Arturo Welcomes Near Space Labs as Stratospheric Imagery Provider`,
+        mediaSource: sources.businessWire,
+        link: "//www.businesswire.com/news/home/20200819005141/en/Arturo-Welcomes-Space-Labs-Stratospheric-Imagery-Provider",
+    },
+    {
         date: 'June 6th, 2020',
         title: `Ep 78 - Arturo's CEO, John-Isaac "jC" Clark`,
         mediaSource: sources.fnoinsuretech,
